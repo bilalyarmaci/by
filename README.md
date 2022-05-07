@@ -1,5 +1,5 @@
 # cv
-This is my first personal website, created using HTML only!<br>
+This is my first personal website, created using HTML and CSS only!<br>
 Link to the website: https://bilal-yarmaci.github.io/cv/
 
 
