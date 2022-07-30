@@ -1,31 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-image: linear-gradient(to bottom right, #E4F9F5,#80caca);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0;
+  background-color: #fffbed;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Neonderthaw', cursive;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fffbed;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fffbed;
+  margin: 0;
+}
+
+p {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1.25rem;
+  color: #fffbed;
+  margin: 0;
+}
+
+img {
+  width: 40%;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto Mono', sans-serif;
+  color: #D61C4E;
 }
 
 hr {
-  border-style: none;
-  border-top-style: dotted;
-  width: 5%;
-  border-color: grey;
-  border-width: 5px;
+  border: dotted 8px #D61C4E;
+  width: 4%;
+  border-bottom: none;
+  margin: 8rem auto;
 }
 
-h1{
-  font-size: 40px;
+.header {
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 100%;
+  line-height: 2.6;
+  background-color: #132a44;
+  margin: auto;
 }
 
-h3{
-  font-size: 25px;
+.header-buttons {
+  font-size: 1.25rem;
+  margin: auto 1rem;
+  color: #fffbed;
+  transition: color 0.5s;
 }
 
-.headings{
-  color: #66BFBF;
-  transition: color 1s;
+.header-buttons:hover {
+  color: #D61C4E;
+  transition: color 0.5s;
 }
 
-.headings:hover{
-  color: purple;
-  transition: color 2s;
+.top-container {
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+  text-align: center;
+  margin: auto;
+  position: static;
+  animation: fadeInAnimation ease 1.5s;
+}
+
+.top-in {
+  width: 70%;
+  text-align: left;
+  margin: auto;
+}
+
+.programmer-img {
+  width: 50%;
+  float: left;
+  margin-right: 7%;
+}
+
+.headings {
+  color: #132a44;
+  transition: color .75s;
+}
+
+.headings:hover {
+  color: #f76825;
+  transition: color .75s;
+}
+
+.middle-container {
+  width: 100%;
+  background-color: #132a44;
+  margin: auto;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  line-height: 2;
+}
+
+.middle-in {
+  width: 70%;
+  margin: auto;
+}
+
+.skills-in {
+  width: 60%;
+  text-align: left;
+  margin: auto;
+}
+
+.skills-texts {
+  transition: color .75s;
+}
+
+.skills-texts:hover {
+  color: #95D1CC;
+  transition: color .75s;
+}
+
+.left-img {
+  width: 22%;
+  float: left;
+  margin: 7rem 3rem auto 3rem;
+}
+
+.right-h3 {
+  margin: 7rem auto auto 3rem;
+}
+
+.right-p {
+  margin-left: 3rem;
+}
+
+.right-img {
+  width: 22%;
+  float: right;
+  margin: 7rem auto 5rem 3rem;
+}
+
+.left-h3 {
+  margin: 7rem auto auto 3rem;
+}
+
+.left-p {
+  margin-left: 3rem;
+}
+
+.education-in {
+  width: 30%;
+  margin: auto;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
