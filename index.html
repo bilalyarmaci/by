@@ -1,79 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  
+<html lang="en" dir="ltr" id="home">
+
 <head>
   <meta charset="utf-8">
-  <title>Bilal's Presonal Site</title>
+  <title>Bilyal Yarmadzha</title>
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Neonderthaw&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+
 </head>
-  
+
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/img1.JPG" alt="Human image." width="200"></td>
-      <td>
-        <h1 class="headings">Bilal Yarmaci</h1>
-        <p><em>University student at <a href="https://btu.edu.tr/" target="_blank" rel="noreferrer">BTU</a>.</em></p>
-        <p>I'm a university student at Bursa Tecnical University. I'm currently on my fisrt year of Computer Science & Engineering degree. I like
-          listening to music and reading. Here I am, learning how to create a beautiful looking website.</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3 class="headings">Education</h3>
-  <ul>
-    <li>OU "Peyo Yavorov"</li>
-    <ul>
-      <li>GPA: 6.00</li>
-    </ul>
-    <li>DU Momchilgrad</li>
-    <ul>
-      <li>GPA: 5.68</li>
-    </ul>
-    <li>Bursa Tecnical University<em> (Continuing)</em></li>
-  </ul>
-  <hr>
-  <h3 class="headings">Skills</h3>
-  <table>
-    <tr>
-      <td>
-        <table cellspacing="10">
-          <tr>
-            <td>Critical thinking</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Research</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>C programming</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table cellspacing="10">
-          <tr>
-            <td>Participation</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Reporting</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">Hobbies</a> &emsp;
-  <a href="contact-me.html">Contact Information</a>
+  <div class="header">
+    <a href="#home" class="header-buttons">Home</a>
+    <a href="#about" class="header-buttons">About</a>
+    <a href="#get-in-touch" class="header-buttons">Get In Touch</a>
+  </div>
+
+  <div class="top-container">
+    <div class="top-in">
+      <img class="programmer-img" src="images/programmer.png" alt="programmer-img">
+      <p> s </p>
+      <h1 class="headings">Bilal Yarmacı</h1>
+    </div>
+  </div>
+
+  <div class="middle-container" id="about">
+    <div class="middle-in">
+      <img src="images/bilal_y.png" alt="Person image.">
+      <p style="margin-bottom: 1.25rem"><em>CSE student at <a href="https://btu.edu.tr/" target="_blank" rel="noreferrer">BTU</a>.</em></p>
+      <p>I'm doing my bachelor's degree at Bursa Technical University. I just finished my first year and I looking forward to the remaining ones. I like listening to music, reading, and of course, coding. This is my portfolio website where I express
+        myself to you
+        while
+        improving my Web Development skills.</p>
+    </div>
+    <hr>
+
+    <h2 style="line-height: 1.225;">Hobbies & Skills</h2>
+    <div class="skills-in">
+      <img style="margin: .25rem 3rem auto 3rem; width: 22%; float: left" src="images/code.png" alt="code-img">
+      <h3 class="skills-texts">Coding</h3>
+      <p class="skills-texts">I enjoy coding and that's why I created this website. Currently I can code with <i>C</i>, <i>Java</i>, <i>HTML</i> and <i>CSS</i>.</p>
+      <img class="right-img" src="images/book.png" alt="book-img" style="margin-top: 7.75rem; width: 25%">
+      <h3 class="left-h3 skills-texts">Reading</h3>
+      <p class="left-p skills-texts">A person gets the chance to learn lessons and sense many different lifes by reading. That's why I love reading books.</p>
+      <img class="left-img" src="images/photography.png" alt="camera-img" style="margin-top: 6.25rem">
+      <h3 class="right-h3 skills-texts">Photography</h3>
+      <p class="right-p">Traveling and taking landscape photos, that's what allows me to regen myself.</p>
+      <img class="right-img" src="images/music.png" alt="music-notes" style="width: 25%">
+      <h3 class="left-h3 skills-texts">Singing</h3>
+      <p class="left-p skills-texts">Music is a borderless language to express your thoughts and feelings. I like listening to music but also singing and playing it.</p>
+    </div>
+    <hr>
+
+    <h2>Education</h2>
+    <div class="education">
+      <div class="education-in" style="float: left">
+        <img src="images/school.png" alt="school-img">
+        <p>OU "Peyo Yavorov"</p>
+        <p>GPA: 6.00</p>
+      </div>
+      <div class="education-in" style="float: right">
+        <img src="images/school.png" alt="school-img">
+        <p>Bursa Tecnical University</p>
+        <p><em>(Continuing)</em></p>
+      </div>
+      <div class="education-in">
+        <img src="images/school.png" alt="school-img">
+        <p>DU Momchilgrad</p>
+        <p>GPA: 5.68</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-container" id="get-in-touch" style="padding: 2rem">
+    <h2 style="color: #132a44; margin: auto auto 2rem">Get In Touch</h2>
+    <a style="margin-right: 3rem; padding:0" href="https://github.com/bilalyarmaci">
+      <img src="images/github.png" alt="github-icon" style="width: 5%">
+    </a>
+    <a href="https://www.linkedin.com/in/bilyal-mustafa-yarmadzha-1915801a0/">
+      <img src="images/linkedin.png" alt="linkedin-icon" style="width: 5%">
+    </a>
+  </div>
+
 </body>
 
 </html>
