@@ -1,90 +1,181 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" id="home">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>Bilyal Yarmadzha</title>
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Neonderthaw&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Yellowtail&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0f1712b047.js" crossorigin="anonymous"></script>
+
+
 
 </head>
 
 <body>
-  <div class="header">
-    <a href="#home" class="header-buttons">Home</a>
-    <a href="#about" class="header-buttons">About</a>
-    <a href="#get-in-touch" class="header-buttons">Get In Touch</a>
-  </div>
 
-  <div class="top-container">
-    <div class="top-in">
-      <img class="programmer-img" src="images/programmer.png" alt="programmer-img">
-      <p> s </p>
-      <h1 class="headings">Bilal Yarmacı</h1>
-    </div>
-  </div>
+  <section id="top-section">
+    <div class="container-fluid">
 
-  <div class="middle-container" id="about">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#get-in-touch" class="nav-link">Get In Touch</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="middle-in">
-      <img src="images/bilal_y.png" alt="person-img">
-      <p style="margin-bottom: 1.25rem"><em>CSE student at <a href="https://btu.edu.tr/" target="_blank" rel="noreferrer">BTU</a>.</em></p>
-      <p>I'm doing my bachelor's degree at Bursa Technical University. I just finished my first year and I'm looking forward to the remaining ones.
-        This is my portfolio website where I express myself to you while improving my Web Development skills.</p>
-    </div>
-    <hr>
-
-    <h2 style="line-height: 1.225;">Skills & Hobbies</h2>
-    <div class="skills-in">
-      <img style="margin: .25rem 3rem auto 3rem; width: 22%; float: left" src="images/code.png" alt="code-img">
-      <h3 class="skills-texts">Coding</h3>
-      <p class="skills-texts">I enjoy coding and that's why I created this website. Currently I can code with <i>C</i>, <i>Java</i>, <i>HTML</i> and <i>CSS</i>.</p>
-      <img class="right-img" src="images/book.png" alt="book-img" style="margin-top: 7.75rem; width: 25%">
-      <h3 class="left-h3 skills-texts">Reading</h3>
-      <p class="left-p skills-texts">A person gets the chance to learn lessons and sense many different lifes by reading. That's why I love reading books.</p>
-      <img class="left-img" src="images/photography.png" alt="camera-img" style="margin-top: 6.25rem">
-      <h3 class="right-h3 skills-texts">Photography</h3>
-      <p class="right-p skills-texts">Traveling and taking landscape photos, that's what allows me to regen myself.</p>
-      <img class="right-img" src="images/music.png" alt="music-note-img" style="width: 25%">
-      <h3 class="left-h3 skills-texts">Singing</h3>
-      <p class="left-p skills-texts">Music is a borderless language to express your thoughts and feelings. I like listening to music but also singing and playing it.</p>
-    </div>
-    <hr>
-
-    <h2>Education</h2>
-    <div class="education">
-      <div class="education-in" style="float: left">
-        <img src="images/school.png" alt="school-img">
-        <p>OU "Peyo Yavorov"</p>
-        <p>GPA: 6.00</p>
+      <!-- Land Page -->
+      <div class="row">
+        <div class="col-sm-6 land-page-content">
+          <img src="images/programmer.png" alt="programmer-img" style="width: 100%">
+        </div>
+        <div class="col-sm-6 land-page-content" style="display: table; overflow: hidden;">
+          <h1>Bilal Yarmacı</h1>
+        </div>
       </div>
-      <div class="education-in" style="float: right">
-        <img src="images/school.png" alt="school-img">
-        <p>Bursa Tecnical University</p>
-        <p><em>(Continuing)</em></p>
-      </div>
-      <div class="education-in">
-        <img src="images/school.png" alt="school-img">
-        <p>DU Momchilgrad</p>
-        <p>GPA: 5.68</p>
-      </div>
+
     </div>
+  </section>
 
-  </div>
+  <section id="about">
+    <div class="container-fluid">
 
-  <div class="bottom-container" id="get-in-touch" style="padding: 2rem">
-    <h2 style="color: #132a44; margin: auto auto 2rem">Get In Touch</h2>
-    <a style="margin-right: 3rem; padding:0" href="https://github.com/bilalyarmaci">
-      <img src="images/github.png" alt="github-icon" style="width: 5%">
-    </a>
-    <a href="https://www.linkedin.com/in/bilyal-mustafa-yarmadzha-1915801a0/">
-      <img src="images/linkedin.png" alt="linkedin-icon" style="width: 5%">
-    </a>
-  </div>
+      <!-- About -->
+      <div class="row">
+        <img class="bilal-img" src="images/bilal_y.png" alt="person-img">
+        <p style="margin-bottom: 1.25rem"><em>CSE student at <a href="https://btu.edu.tr/" target="_blank" rel="noreferrer" style="color: #D61C4E">BTU</a>.</em></p>
+        <p>I'm doing my bachelor's degree at Bursa Technical University. I just finished my first year and I'm looking forward to the remaining ones.
+          This is my portfolio website where I express myself to you while improving my Web Development skills.</p>
+      </div>
+      <hr>
 
+      <!-- Skills & Hobbies -->
+      <h2 style="line-height: 1.225;">Skills & Hobbies</h2>
+
+      <div class="row skill-box">
+        <div class="col-lg-3 skill-inner-div">
+          <div class="skill-element">
+            <img style="width: 100%" src="images/code.png" alt="code-img">
+          </div>
+        </div>
+        <div class="col-lg-9 skill-inner-div">
+          <div class="skill-element">
+            <h3>Coding</h3>
+            <p>I enjoy coding and that's why I created this website. Currently I can code with <i>C</i>, <i>Java</i>, <i>HTML</i> and <i>CSS</i>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row skill-box">
+        <div class="col-lg-3 skill-inner-div">
+          <div class="skill-element">
+            <img src="images/book.png" alt="book-img" style="width: 100%">
+          </div>
+        </div>
+        <div class="col-lg-9 skill-inner-div">
+          <div class="skill-element">
+            <h3>Reading</h3>
+            <p>A person gets the chance to learn lessons and sense many different lifes by reading. That's why I love reading books.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row skill-box">
+        <div class="col-lg-3 skill-inner-div">
+          <div class="skill-element">
+            <img src="images/photography.png" alt="camera-img" style="width: 100%">
+          </div>
+        </div>
+        <div class="col-lg-9 skill-inner-div">
+          <div class="skill-element">
+            <h3>Photography</h3>
+            <p>Traveling and taking landscape photos, that's what allows me to regen myself.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row skill-box">
+        <div class="col-lg-3 skill-inner-div">
+          <div class="skill-element">
+            <img class="right-img" src="images/music.png" alt="music-note-img" style="width: 100%">
+          </div>
+        </div>
+        <div class="col-lg-9 skill-inner-div">
+          <div class="skill-element">
+            <h3>Singing</h3>
+            <p>Music is a borderless language to express your thoughts and feelings. I like listening to music but also singing and playing it.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container-fluid">
+      <!-- Education -->
+      <h2 style="margin-bottom: 3rem">Education</h2>
+      <div class="row">
+        <div class="col-lg-4" style="margin-top: 4rem; padding: 0 2rem;">
+          <i class="fa-solid fa-school-circle-check fa-10x"></i>
+          <p style="margin-top: 1rem">OU "Peyo Yavorov"</p>
+          <p style="line-height: 0">GPA: 6.00</p>
+        </div>
+        <div class="col-lg-4" style="margin-top: 4rem; padding: 0 2rem;">
+          <i class="fa-solid fa-building-columns fa-10x"></i>
+          <p style="margin-top: 1rem">Bursa Tecnical University</p>
+          <p style="line-height: 0"><em>(Continuing)</em></p>
+        </div>
+        <div class="col-lg-4" style="margin-top: 4rem; padding: 0 2rem;">
+          <i class="fa-solid fa-school-circle-check fa-10x"></i>
+          <p style="margin-top: 1rem;">DU Momchilgrad</p>
+          <p style="line-height: 0">GPA: 5.68</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="get-in-touch">
+    <div class="container-fluid">
+      <h2 style="color: #132a44; margin: auto auto 2rem">Get In Touch</h2>
+      <a style="margin: 0 1rem" href="https://github.com/bilalyarmaci">
+        <i class="fa-brands fa-github fa-6x GIT-icon"></i>
+      </a>
+      <a style="margin: 0 1rem" href="https://www.linkedin.com/in/bilyal-mustafa-yarmadzha-1915801a0/">
+        <i class="fa-brands fa-linkedin fa-6x GIT-icon"></i>
+      </a>
+      <footer>
+        <p style="line-height: 0; margin-top: 1rem; font-size: 1rem"><span style="font-size: 1.3rem">©️</span> Yarmadzha, 2022</p>
+      </footer>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
