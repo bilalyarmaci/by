@@ -1,3 +1,54 @@
+:root {
+  --p-top: 3% 10% 10%;
+  --p-about: 3% 20% 10%;
+  --p-education: 3% 10% 15%;
+  --p-get-in-touch: 3% 10% 1%;
+  --p-GIT-btn: .5rem;
+
+  --fs-h2: clamp(2rem, 12vw + .25rem, 3rem);
+  --fs-h3: clamp(1.25rem, 12vw + .25rem, 2rem);
+  --fs-p: clamp(1rem, 12vw + .25rem, 1.25rem);
+  --fs-GIT-btn: 2rem;
+
+  --e-display: inline-block;
+  --tx_a: left;
+  --lh: 2;
+}
+@media (min-width: 1900px) {
+  :root{
+    --fs-h2: 3.5rem;
+    --fs-h3: 3rem;
+    --fs-p: 2rem;
+    --fs-GIT-btn: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --p-about: 3% 10% 5%;
+    --p-education: 3% 3% 15%;
+    --p-GIT-btn: .3rem;
+    --fs-GIT-btn: 1.4rem;
+    --fs-p: 1.25rem;
+    --lh: 1.2;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --e-display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  :root {
+    --p-about: 3% 1% 5%;
+    --p-education: 3% 1% 15%;
+    --p-get-in-touch: 3% 1% 1%;
+    --tx_a: center;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,19 +68,19 @@ h1:hover {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: var(--fs-h2);
   font-family: 'Poppins', sans-serif;
   margin: 5rem auto;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: var(--fs-h3);
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: var(--fs-p);
   font-family: 'Roboto Mono', sans-serif;
-  line-height: 2;
+  line-height: var(--lh);
 }
 
 a {
@@ -38,7 +89,7 @@ a {
   color: black;
 }
 
-a:hover{
+a:hover {
   transition: color .5s;
   color: #D61C4E;
 }
@@ -46,14 +97,18 @@ a:hover{
 hr {
   border: dotted 8px #D61C4E;
   border-top: none;
-  width: 8%;
+  width: 66px;
   margin: 3rem auto;
   opacity: .5;
 }
 
+.c-langs {
+  color: #D61C4E;
+}
+
 /* Top Section */
 #top-section {
-  padding: 3% 10% 15%;
+  padding: var(--p-top);
   background-color: #F2F2F2;
 }
 
@@ -67,7 +122,6 @@ hr {
 }
 
 .nav-item {
-  padding-right: 1.2rem;
   font-size: 1.25rem;
   font-family: 'Roboto Mono', monospace;
 }
@@ -76,16 +130,20 @@ hr {
   color: #D61C4E;
 }
 
+.vr-nav {
+  display: var(--e-display);
+  margin: 0 1rem;
+}
+
 /* About Section */
 #about {
-  padding: 3% 20% 10%;
+  padding: var(--p-about);
   text-align: center;
 }
 
-.bilal-img {
-  width: 50%;
-  margin: 2.5rem auto;
-  filter: drop-shadow(0 20px 20px grey);
+.bilal-avatar {
+  width: 65%;
+  margin: 1rem auto 0;
 }
 
 /* Skills & Hobbies */
@@ -100,11 +158,10 @@ hr {
   padding: auto 0;
 }
 
-
 .skill-element {
   display: table-cell;
   vertical-align: middle;
-  text-align: left;
+  text-align: var(--tx_a);
   transition: color .75s;
 }
 
@@ -119,17 +176,19 @@ hr {
 }
 
 /* Education Section */
-
 #education {
-  padding: 3% 15% 15%;
+  padding: var(--p-education);
   background-color: #F2F2F2;
   text-align: center;
 }
 
 /* Get In Touch Section */
-
 #get-in-touch {
-  padding: 3% 15% 1%;
-  padding: 2rem 2rem 0;
+  padding: var(--p-get-in-touch);
   text-align: center;
+}
+
+.GIT-btns {
+  padding: var(--p-GIT-btn);
+  font-size: var(--fs-GIT-btn);
 }
