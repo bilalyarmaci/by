@@ -24,43 +24,54 @@
 
 <body>
 
-    <section id="top-section">
-      <div class="container-fluid">
+  <section id="top-section">
+    <div class="container-fluid">
 
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <div class="vr vr-nav"></div>
-              <li class="nav-item">
-                <a href="#education" class="nav-link">Education</a>
-              </li>
-              <div class="vr vr-nav"></div>
-              <li class="nav-item">
-                <a href="#get-in-touch" class="nav-link">Get In Touch</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <div class="vr vr-nav"></div>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <div class="vr vr-nav"></div>
+            <li class="nav-item">
+              <a href="#get-in-touch" class="nav-link">Get In Touch</a>
+            </li>
+            <div class="vr vr-nav"></div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-language"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="turkish.html">Türkçe 🇹🇷</a></li>
+                <li><a class="dropdown-item" href="bulgarian.html">Български 🇧🇬</a></li>
+              </ul>
+            </li>
 
-        <!-- Land Page -->
-        <div class="row">
-          <div class="col-sm-6 land-page-content">
-            <img src="images/hello.png" alt="programmer-img" style="width: 100%">
-          </div>
-          <div class="col-sm-6 land-page-content" style="display: table; overflow: hidden;">
-            <h1>Bilal Yarmacı</h1>
-          </div>
+          </ul>
         </div>
+      </nav>
 
+      <!-- Land Page -->
+      <div class="row">
+        <div class="col-sm-6 land-page-content">
+          <img src="images/hello.png" alt="programmer-img" style="width: 100%">
+        </div>
+        <div class="col-sm-6 land-page-content" style="display: table; overflow: hidden;">
+          <h1>Bilal Yarmacı</h1>
+        </div>
       </div>
-    </section>
+
+    </div>
+  </section>
 
   <section id="about">
     <div class="container-fluid">
@@ -121,8 +132,8 @@
       <div class="row flex-column-reverse flex-sm-row skill-box">
         <div class="col-sm-9 skill-inner-div">
           <div class="skill-element">
-            <h3>Singing</h3>
-            <p>Music is a borderless language to express your thoughts and feelings. I like listening to music but also singing and playing it.</p>
+            <h3>Music</h3>
+            <p>Music is a borderless language to express your thoughts and feelings. I like listening music, especially instrumental.</p>
           </div>
         </div>
         <div class="col-sm-3 skill-inner-div">
@@ -157,7 +168,7 @@
 
     </div>
   </section>
-
+  <!-- Get In Touch -->
   <section id="get-in-touch">
     <div class="container-fluid">
       <h2 style="color: #132a44; margin: auto auto 2rem">Get In Touch</h2>
@@ -182,6 +193,7 @@
           <img src="images/get-in-touch.png" alt="avatar-img" style="width: 70%">
         </div>
       </div>
+      <!-- Copyright -->
       <footer>
         <p style="line-height: 0; margin-top: 1rem; font-size: 1rem"><span style="font-size: 1.3rem">©️</span> Yarmadzha, 2022</p>
       </footer>
@@ -189,7 +201,7 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  
+
 </body>
 
 </html>
