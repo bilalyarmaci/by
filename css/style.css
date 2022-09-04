@@ -3,11 +3,11 @@
   --p-about: 3% 20% 10%;
   --p-education: 3% 10% 15%;
   --p-get-in-touch: 3% 10% 1%;
-  --p-GIT-btn: .5rem;
+  --p-GIT-btn: 0.5rem;
 
-  --fs-h2: clamp(2rem, 12vw + .25rem, 3rem);
-  --fs-h3: clamp(1.25rem, 12vw + .25rem, 2rem);
-  --fs-p: clamp(1rem, 12vw + .25rem, 1.25rem);
+  --fs-h2: clamp(2rem, 12vw + 0.25rem, 3rem);
+  --fs-h3: clamp(1.25rem, 12vw + 0.25rem, 2rem);
+  --fs-p: clamp(1rem, 12vw + 0.25rem, 1.25rem);
   --fs-GIT-btn: 2rem;
 
   --e-display: inline-block;
@@ -15,7 +15,7 @@
   --lh: 2;
 }
 @media (min-width: 1900px) {
-  :root{
+  :root {
     --fs-h2: 3.5rem;
     --fs-h3: 3rem;
     --fs-p: 2rem;
@@ -27,7 +27,7 @@
   :root {
     --p-about: 3% 10% 5%;
     --p-education: 3% 3% 15%;
-    --p-GIT-btn: .3rem;
+    --p-GIT-btn: 0.3rem;
     --fs-GIT-btn: 1.4rem;
     --fs-p: 1.25rem;
     --lh: 1.2;
@@ -37,6 +37,22 @@
 @media (max-width: 1023px) {
   :root {
     --e-display: none;
+  }
+  h3{
+    font-size: 1rem !important;
+  }
+  small{
+    font-size: .9rem !important;
+  }
+  .projects-container{
+    width: 100% !important;
+  }
+  .project-div:hover .project-desc{
+    bottom: 10% !important;
+  }
+  .project-div{
+    width: min(400px, 70%) !important;
+    box-shadow: none !important;
   }
 }
 
@@ -54,62 +70,85 @@ html {
 }
 
 h1 {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   font-size: 10vw;
-  transition: color .75s;
+  transition: color 0.75s;
   padding-top: 2rem;
   display: table-cell;
   vertical-align: middle;
 }
 
 h1:hover {
-  color: #D61C4E;
-  transition: color .75s;
+  color: #d61c4e;
+  transition: color 0.75s;
 }
 
 h2 {
   font-size: var(--fs-h2);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
   margin: 5rem auto;
 }
 
 h3 {
   font-size: var(--fs-h3);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
 }
 
 p {
   font-size: var(--fs-p);
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: var(--lh);
+}
+
+hr{
+  margin: .5rem auto;
+  width: 80%;
+  height: 2px;
+  border: 0;
+  background: #fff;
 }
 
 a {
   text-decoration: none;
-  transition: color .75s;
+  transition: color 0.75s;
   color: black;
 }
 
 a:hover {
-  transition: color .5s;
-  color: #D61C4E;
+  transition: color 0.5s;
+  color: #d61c4e;
 }
 
-hr {
-  border: dotted 8px #D61C4E;
+small{
+  font-size: var(--fs-p);
+}
+
+.separator {
+  border: dotted 8px #d61c4e;
   border-top: none;
   width: 66px;
   margin: 3rem auto;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.c-langs {
-  color: #D61C4E;
+.no-eff{
+  color: white;
+}
+
+.no-eff:hover{
+  color: white;
+}
+
+.carousel-item{
+  padding-block: 4rem;
 }
 
 /* Top Section */
 #top-section {
   padding: var(--p-top);
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .land-page-content {
@@ -123,11 +162,11 @@ hr {
 
 .nav-item {
   font-size: 1.25rem;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .nav-link:hover {
-  color: #D61C4E;
+  color: #d61c4e;
 }
 
 .vr-nav {
@@ -162,12 +201,7 @@ hr {
   display: table-cell;
   vertical-align: middle;
   text-align: var(--tx_a);
-  transition: color .75s;
-}
-
-.skill-element:hover {
-  color: #95D1CC;
-  transition: color .75s;
+  transition: color 0.75s;
 }
 
 .skill-box {
@@ -175,10 +209,81 @@ hr {
   margin: 0 0 5rem;
 }
 
+/* Projects Section */
+#projects{
+  background-color: #333333;
+  color: #ffffff;
+  margin-inline: auto;
+  text-align: center;
+  padding-block: 4rem;
+}
+
+#projects h2{
+  font-family: 'Montserrat Subrayada', sans-serif !important;
+  margin: 0 0 1rem;
+}
+
+.projects-container{
+  width: 70%;
+  margin-inline: auto;
+}
+
+.project-div{
+  position: relative;
+  text-align: center;
+  margin-inline: auto;
+  transition: all .85s;
+  width: min(400px, 100%);
+}
+
+.project-img{
+  width: min(400px, 100%);
+  border-radius: 10px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 1, 0.5);
+  color: #fff;
+}
+
+.overlay{
+  height: 100%;
+  width: min(400px, 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  transition: .85s;
+}
+
+.project-desc{
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: .85s;
+}
+
+.project-div:hover .project-desc{
+  bottom: 25%;
+  opacity: 1;
+}
+
+.project-div:hover{
+  scale: 1.04;
+}
+.project-div:hover .overlay{
+  opacity: 1;
+}
+
 /* Education Section */
 #education {
   padding: var(--p-education);
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   text-align: center;
 }
 
